@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Web Spy",
+  "version": "0.1",
+  "description": "a simple event listener for browser automation",
+
+  "commands": {    
+    "toggle_listener": {
+      "suggested_key": {"default": "Ctrl+Shift+U"},
+      "description": "Start event listener"
+    } 
+  },
+
+  "permissions": [
+    "*://*/*"
+  ],
+
+  "background": {
+    "scripts": ["./background.js"]
+  }
+
+}
